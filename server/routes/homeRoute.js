@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getHome } = require('../controller/homeController');
+const { getHome } = require('../controller/homeController');   
 
 router.get('/', (req, res) => {
     res.redirect('/home');
