@@ -1,0 +1,28 @@
+#container {
+    display: block;
+}
+
+#side-menu {
+    color: white;
+    text-align: center;
+    height: 100px;
+    background-color: rgb(2, 128, 79);
+}
+
+#side-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-menu ul * {
+    padding: 1em 0.5em 1em 0.5em;
+    list-style: none;
+}
+
+
+#listElement:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.35s;
+}

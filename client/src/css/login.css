@@ -1,0 +1,186 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(90deg, #00aaff, rgb(113, 187, 113));
+    background-size: 200% 100%;
+    animation: backgroundAnimation 7s linear infinite alternate;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.title-container {
+    text-align: center;
+    position: absolute;
+    top: 7em;
+    /* Imposta la distanza dal bordo superiore */
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    overflow: hidden;
+    background: linear-gradient(90deg, #00aaff, #00ff00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientText 5s linear infinite;
+}
+
+.title span {
+    display: inline-block;
+    animation: zoomIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    transform-origin: center bottom;
+    opacity: 0;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aggiungi uno spazio tra le lettere per una migliore visualizzazione */
+.title span:not(:last-child) {
+    margin-right: 0.2em;
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+
+
+
+
+.title span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.title span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.title span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.title span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.title span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.title span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.title span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.title span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.title span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.title span:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.title span:nth-child(11) {
+    animation-delay: 1.1s;
+}
+
+.title span:nth-child(12) {
+    animation-delay: 1.2s;
+}
+
+
+.bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.bubble {
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid black;
+    /* Colore delle bolle con trasparenza */
+    width: 15em;
+    /* Dimensioni delle bolle */
+    height: 15em;
+    border-radius: 50%;
+    animation: bubbleAnimation 20s linear infinite;
+    /* Animazione più lenta */
+}
+
+@keyframes bubbleAnimation {
+    0% {
+        transform: translateY(100vh) translateX(-50%) scale(1);
+        opacity: 0.1;
+        /* Opacità leggera */
+    }
+
+    100% {
+        transform: translateY(-100px) translateX(-50%) scale(1.5);
+        opacity: 0.1;
+    }
+}
+
+.btn-registrati {
+    float: right;
+    margin-top: 0.3em;
+    height: auto;
+}
+
+.label-btn-register {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+}
+
+.register-btn-container {
+    /*border: 1px solid black; */
+    height: 3.07em;
+    align-items: center;
+    justify-content: center;
+}

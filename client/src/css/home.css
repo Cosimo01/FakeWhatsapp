@@ -1,0 +1,36 @@
+/* Stile del contenitore della rubrica */
+.contact-container {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Stile dell'elenco dei contatti */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Stile di ciascun contatto */
+.contact-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+/* Stile al passaggio del mouse su un contatto */
+.contact-item:hover {
+    background-color: #f2f2f2;
+}
+
+/* Stile del nome del contatto */
+.contact-name {
+    font-weight: bold;
+}
+
+/* Stile del numero di telefono del contatto */
+.contact-phone {
+    color: #777;
+}

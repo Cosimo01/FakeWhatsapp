@@ -1,0 +1,46 @@
+.message-container {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Stile dell'area dei messaggi */
+.message-area {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Stile dei messaggi */
+.message {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+
+/* Stile dell'input del messaggio */
+.message-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+}
+
+/* Stile del pulsante di invio */
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Stile del pulsante di invio al passaggio del mouse */
+.send-button:hover {
+    background-color: #0056b3;
+}

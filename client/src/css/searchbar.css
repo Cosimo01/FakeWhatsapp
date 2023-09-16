@@ -1,0 +1,43 @@
+.search-bar-input {
+    outline: none;
+    border-radius: 5em;
+    margin-bottom: 1.5em;
+    margin-right: 0.5em;
+    height: 2.8em;
+    width: 75%;
+}
+
+input[type="text"] {
+    text-indent: 1em;
+    /* Margine di rientro a sinistra */
+}
+
+.search-bar-button {
+    padding: 10px 20px;
+    /* Padding interno */
+    background-color: #007bff;
+    /* Colore di sfondo */
+    color: #fff;
+    /* Colore del testo */
+    border: none;
+    /* Nessun bordo */
+    border-radius: 5em;
+    /* Bordi arrotondati */
+    cursor: pointer;
+    /* Cambio del cursore al passaggio sopra il bottone */
+    font-size: 100%;
+    font-weight: bold;
+    /* Dimensione del carattere */
+    transition: background-color 0.3s ease;
+    /* Animazione del cambio di colore */
+}
+
+.search-bar-button:hover {
+    background-color: #0056b3;
+    /* Cambio di colore al passaggio sopra il bottone */
+}
+
+.search-bar-button:active {
+    transform: translateY(2px);
+    /* Leggera animazione al click */
+}
